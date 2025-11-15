@@ -1,1 +1,1 @@
-# CU_DeepLearning_Something_Of_Painting_Myself-
+# CU_DeepLearning_Something_Of_Painting_Myself
