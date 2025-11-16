@@ -39,3 +39,32 @@ Training parameters:
 
 
 Finally, I generates 8000 Monet-style images from the photo dataset, saved as JPEG files in a ZIP archive for submission.
+
+# Conclusion
+
+This project implemented a **CycleGAN model** for photo-to-Monet style transfer using unpaired image translation.
+
+This project shows how **deep learning can effectively learn artistic style transformations** from unpaired datasets, opening possibilities for various creative applications.
+
+## Key Results
+I train 300 Monet paintings + 7,038 photos processed via efficient TFRecord pipeline. 8,000 Monet-style images are saved as JPEGs.
+
+## Training Progress
+
+| Step | G Loss | D Loss |
+|------|--------|--------|
+| 0    | 12.64  | 1.64   |
+| 100  | 6.66   | 1.37   |
+| 200  | 6.68   | 1.39   |
+| 300  | 6.08   | 1.34   |
+| 400  | 6.18   | 1.31   |
+
+**Key Finding**: Generator loss decreased steadily.
+G Loss decreased from 12.64 → 6.18 shows the model is learning to generate realistic Monet-style images.
+
+
+## Future Improvements
+- Extend training to 10,000+ steps for better quality
+- Add evaluation metrics (FID score, perceptual loss)
+- Implement data augmentation (flips, rotations)
+- Experiment with attention mechanisms
